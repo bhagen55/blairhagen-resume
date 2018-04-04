@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Blair}{Hagen}{ 
+\href{mailto:bhagen55@gmail.com}{bhagen55@gmail.com} | 925.457.9586
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Union College}
+\descript{BS in Computer Engineering}
+\location{Expected June 2019 | Schenectady, NY \\ Cum. GPA: 3.3}
+\sectionsep
+
+\subsection{The Athenian School}
+\location{Grad. May 2015 | Danville, California}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Microcontrollers (PIC24, C++) \\
+Computer and Logic Design \\
+Databases (SQL) \\
+Digital/Analog Systems \\
+Circuits \\
+Data Structures (Java)\\
+Image Manipulation (Python) \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} Java \textbullet{} Matlab \textbullet{} C++ \\
+\subsection{CAD}
+Siemens NX \textbullet{} Solidworks \\
+\subsection{Operating Systems}
+Windows Server 2012 R2/2016 \textbullet{} Ubuntu Server 16.04 \textbullet{} FreeNAS \textbullet{} PFSense \\
+\subsection{Homelab Server}
+Owncloud/Nextcloud \textbullet{} Active Directory \\
+Nginx \textbullet{} Docker \textbullet{}  Hyper-V \textbullet{} Proxmox \\
+ESXi \textbullet{} OpenVPN
+\subsection{Microcontrollers}
+Arduino \textbullet{} Particle Photon \textbullet{} PIC24
+\sectionsep
+
+\section{Biography}
+I was born a tinkerer and an explorer and continue to apply that to nearly every aspect of my life. I am a self-starter, ready to take on any project from start to finish. I am not afraid to ask for help and utilize every resource available to help a project go smoothly and quickly. I love a challenge and embrace any opportunity that allows me to learn new skills and information. I am a team player and strive to support my team members in any way possible.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Zipline International}
+\descript{| Electrical Engineering Test Intern / Contractor}
+\location{June 2017 – August 2017 / November 2017  | Half Moon Bay, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\vspace{\topsep}
+\begin{tightemize}
+\item Designed, coded, and tested control and monitoring electronics for wind tunnel model. Worked closely with aerodynamics team to create the easiest user experience possible for them to run through tests quickly once at the wind tunnel.
+\item Designed, coded, and operated whole-vehicle highly accelerated lifetime tester. Tester simulates 3G flight turbulence load on vehicle for long periods of time (12 hours or more). Purpose of tester is to highlight any unknown failure modes that are difficult or impossible to discover from individual systems tests. Tester identified multiple critical issues in the attachment mechanisms for components like the battery as well as fastener retention issues in my last two weeks of operating the tester. The tester continues to operate and is utilized to validate design changes to every part of the plane before they are put into production.
+\item Coded motor testing pod. Pod controls, monitors, and logs 6 high powered brushless motors as they are lifetime and durability tested.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Learning Technology Student Consultants}
+\descript{| Student Consultant }
+\location{Expected September 2016 - June 2019 | Schenectady, NY}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Led design and creation and now manage a WordPress website catering to both professors looking to utilize learning technologies and students needing additional assistance with learning technologies.
+\item Currently producing tutorials for web tools.
+\item Currently leading demos and hands on training in classes. Introduce students to the tools their professor would be utilizing and give them the basic skills needed to begin their projects.
+\item Meeting with students one-on-one to solve issues and answer questions regarding their learning technology projects.
+\item Researching and testing new learning technologies.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{InVision Communications}
+\descript{| IT Intern, Desktop Support}
+\location{Summers 2011 – 2016 | Walnut Creek, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Provided computer support for clients and employees
+\item Completed equipment preparation, asset intake/management, equipment installation, and testing.
+\item Gained basic production skills in Windows Server network management and deployment of infrastructure in a new office.
+\item Created and managed a Nextcloud server for employee to client file sharing where traditional cloud services were not suitable.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Shargel Science Summer Camp}
+\descript{| Counselor}
+\location{Summers 2013 – 2015 | Walnut Creek, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Supported campers of ages 12-15 in learning how to solder, wire, solve design problems, and learn science. 
+\item Ensured camper safety while helping complete relatively dangerous activities and demonstrations in the science lab.
+\item Designed and fabricated parts for camper activities like drone egg drop and powered paper airplanes.
+ 
+\end{tightemize}
+\sectionsep
+
+%% Page End
+\end{minipage}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ENGINEERING TEAMS AND PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Engineering Teams and Projects}
+\runsubsection{SAE Aero Team}
+\descript{| Co-Captain and Test Pilot}
+\location{ Expected June 2015 - June 2019 | Schenectady, NY}
+\begin{tightemize}
+\item Managed practicum student's attendance and evaluated reports at the end of terms. Managed team's overall timeline and work schedule.
+\item Researched, selected, and tested all electronics in plane.
+\item Researched and chose airfoil. Designed wing construction in Solidworks as well as created an assembly jig. Manufactured final wings for competition plane.
+\item Conducted test flights prior to competition evaluating controllability, stability in turbulence, performance in wind, dead stick control and glide performance, launching techniques, and real-world flight time.
+\item Attended 2016 SAE Aero West competition and 2017 SAE Aero East competition.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{FIRST Robotics Team}
+\descript{| Captain and CAD Lead}
+\location{March 2014 – February 2015 | Danville, CA}
+\begin{tightemize}
+\item Organized and prepared pre-season and season schedule. 
+\item Managed team leadership positions.
+\item Worked to balance assistance from adult mentors with student innovation and ingenuity. Robot was entirely student designed with minimal help from mentors. Mentors helped with basic skills and to keep students from re-inventing the wheel on engineering problems with existing solutions.
+\item Facilitated design discussions, led CAD design of robot, and milled parts. 
+\item Attended 2014 Silicon Valley FRC competition as team member and 2016 competition as captain and robot driver
+\end{tightemize}
+\sectionsep
+
+
+
+%\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ENGINEERING TEAMS AND PROJECTS CONTD.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\runsubsection{Multi-role Compact Quadcopter}
+\descript{| Personal Project}
+\location{ January 2014 - Present}
+\begin{tightemize}
+\item Designed, built, and tested 600mm size quadcopter that can fold to fit in a medium size backpack. Has swappable mounts for video equipment and flexible center of gravity with movable battery. Fully autonomous with telemetry system. Frame is waterjet cut carbon fiber sheet.
+\item Project reinforced practical skills such as CAD, 3D printing, laser cutting, waterjet cutting, general wiring, and flight controller configuration.
+\item Gained insight into making a prototype into a finished product. Worked around roadblocks like lack of quality electronics, limited on-site manufacturing equipment, and school work.
+\item More information as well as pictures available here: 
+\urlstyle{same}
+\underline{\url{https://pathbrite.com/blairhagen5497/azsL}}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TRAVEL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Travel} 
+\runsubsection{Africa} \\
+\normalsize I have traveled to Africa twice on Safari with my family, and most recently to aid the Morning Star Orphanage in Kenya. We brought school supplies for the kids living at the orphanage as well as tools and equipment for the infrastructure. We also traveled to nine different orphanages and schools to put on workshops for the kids as well as bring them school supplies, equipment, and construct and stock libraries. I made many friends, both young and old, and learned what the real Kenya is like. \\
+\runsubsection{Thailand} \\
+\normalsize In the aftermath of the tsunami, my family and I traveled to the affected areas and assisted the Life Home Project, a home for women and children with AIDS. We also supported the Ecotourism organization which trains men and women to become dive masters and have a career in tourism.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HOBBIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hobbies} 
+Remote Control Vehicles \textbullet{} Cars \textbullet{} SCUBA Diving \textbullet{} Mountain Biking \textbullet{} Offroading \textbullet{} Camping \textbullet{} Backpacking \textbullet{} Video Games
+\sectionsep{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SCHOLARSHIPS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Scholarships} 
+\begin{tabular}{rll}
+2015-2019	     & Presidential Scholarship\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2017   & National		& Omicron Delta Kappa Leadership Honor Society (Nominated, not yet inducted)\\
+2016   & International   & The Kappa Alpha Society\\
+\end{tabular}
+\sectionsep
+
+%\end{minipage} 
+\end{document}  \documentclass[]{article}
